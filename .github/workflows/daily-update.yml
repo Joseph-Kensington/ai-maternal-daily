@@ -1,16 +1,12 @@
-name: Daily AI & Maternal-Baby Report
+name: ROOT 母婴产品行业新闻 — 每日更新
 
 on:
   schedule:
-    # 北京时间每天早上 8:00 (UTC 0:00)
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 允许手动触发
+    - cron: '0 0 * * *'  # 北京时间每天 08:00
+  workflow_dispatch:
   push:
-    branches:
-      - main
-    paths:
-      - 'scripts/**'
-      - '.github/workflows/**'
+    branches: [main]
+    paths: ['scripts/**', '.github/workflows/**']
 
 permissions:
   contents: write
@@ -19,25 +15,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Build Report
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: 抓取新闻 & 生成页面
         run: node scripts/build.js
-
-      - name: Commit & Push
+      - name: 推送更新
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "ROOT-Bot"
+          git config user.email "bot@rootglobal.net"
           git add index.html
           if git diff --staged --quiet; then
-            echo "No changes to commit."
+            echo "无变化，跳过提交"
           else
-            git commit -m "📰 更新晨报 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
+            git commit -m "📰 ROOT 母婴新闻更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
             git push
           fi
