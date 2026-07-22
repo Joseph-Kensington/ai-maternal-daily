@@ -35,7 +35,16 @@ jobs:
           git add index.html
           if git diff --staged --quiet; then
             echo "无变化，跳过提交"
-          else
-            git commit -m "📰 ROOT 母婴新闻更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
-            git push
+            exit 0
           fi
+          git commit -m "📰 ROOT 母婴新闻更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
+          # 重试推送最多3次，处理并发冲突
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push; then
+              echo "✅ 推送成功"
+              exit 0
+            fi
+            echo "⚠️ 推送失败，第${i}次重试..."
+            sleep 2
+          done
+          echo "❌ 推送失败" && exit 1
