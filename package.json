@@ -1,0 +1,13 @@
+{
+  "name": "ai-maternal-daily",
+  "version": "1.0.0",
+  "description": "AI & 母婴行业每日晨报 — 自动化构建并部署到 GitHub Pages",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "npx serve ."
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

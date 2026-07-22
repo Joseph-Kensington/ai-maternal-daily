@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & 母婴行业晨报 · 2026年7月23日</title>
+<meta name="description" content="每日 AI 与母婴行业精选资讯，15 条实时更新">
+<meta property="og:title" content="AI & 母婴行业晨报 · 2026年7月23日">
+<meta property="og:description" content="0 条 AI 资讯 + 15 条母婴行业动态">
+<meta property="og:type" content="website">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f5f5f7;color:#1d1d1f;line-height:1.6;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:48px 24px 40px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 30% 50%,rgba(99,102,241,0.15) 0%,transparent 60%),radial-gradient(ellipse at 70% 50%,rgba(236,72,153,0.1) 0%,transparent 60%);animation:heroGlow 12s ease-in-out infinite}
+@keyframes heroGlow{0%,100%{transform:translate(0,0)}50%{transform:translate(2%,1%)}}
+.hero-content{position:relative;z-index:1;max-width:900px;margin:0 auto}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:20px;padding:4px 16px;font-size:13px;letter-spacing:0.5px;margin-bottom:16px;backdrop-filter:blur(10px)}
+.hero h1{font-size:clamp(24px,4vw,36px);font-weight:700;margin-bottom:8px;background:linear-gradient(135deg,#e0e7ff,#f0abfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-date{font-size:15px;color:rgba(255,255,255,0.7);margin-bottom:24px}
+.hero-total{font-size:48px;font-weight:800;line-height:1;margin-bottom:4px;color:#fff}
+.hero-total-label{font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:20px}
+.hero-stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.hero-stat{background:rgba(255,255,255,0.08);border-radius:10px;padding:10px 16px;min-width:80px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.08);transition:transform 0.2s,background 0.2s}
+.hero-stat:hover{transform:translateY(-2px);background:rgba(255,255,255,0.14)}
+.hero-stat-num{font-size:22px;font-weight:700}
+.hero-stat-label{font-size:11px;color:rgba(255,255,255,0.55);margin-top:2px}
+.nav-bar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 16px}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:8px 0}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-link{flex-shrink:0;padding:7px 16px;border-radius:18px;font-size:13px;color:#555;text-decoration:none;transition:all 0.2s;white-space:nowrap;font-weight:500}
+.nav-link:hover{background:rgba(99,102,241,0.08);color:#6366f1}
+.nav-link.active{background:#6366f1;color:#fff}
+.nav-link .nav-count{display:inline-block;background:rgba(0,0,0,0.06);border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;font-weight:600}
+.nav-link.active .nav-count{background:rgba(255,255,255,0.25)}
+.main{max-width:1200px;margin:0 auto;padding:24px 16px 48px}
+.section-header{display:flex;align-items:center;gap:10px;margin:36px 0 16px;padding-bottom:10px;border-bottom:2px solid #e5e7eb;scroll-margin-top:72px}
+.section-header:first-of-type{margin-top:8px}
+.section-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.section-header h2{font-size:20px;font-weight:700}
+.section-header .section-count{font-size:13px;color:#888;background:#f3f4f6;padding:2px 10px;border-radius:12px;font-weight:500}
+.icon-models{background:#ede9fe;color:#7c3aed}
+.icon-products{background:#dbeafe;color:#2563eb}
+.icon-industry{background:#fef3c7;color:#d97706}
+.icon-paper{background:#d1fae5;color:#059669}
+.icon-tip{background:#fce7f3;color:#db2777}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.card{background:#fff;border-radius:12px;padding:16px 18px;border:1px solid #e5e7eb;transition:box-shadow 0.2s,transform 0.2s,border-color 0.2s;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08);transform:translateY(-2px);border-color:#d1d5db}
+.card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;border-radius:3px 0 0 3px}
+.card.models::before{background:#7c3aed}
+.card.products::before{background:#2563eb}
+.card.industry::before{background:#d97706}
+.card.paper::before{background:#059669}
+.card.tip::before{background:#db2777}
+.card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.card-num{font-size:12px;font-weight:700;color:#9ca3af;flex-shrink:0;min-width:24px}
+.card-title{font-size:14px;font-weight:600;color:#1f2937;line-height:1.4;flex:1}
+.card-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.source-chip{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:#6b7280;background:#f3f4f6;padding:2px 8px;border-radius:10px;white-space:nowrap;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.source-chip.maternal{background:#fce7f3;color:#be185d}
+.source-chip.root{background:#dbeafe;color:#1d4ed8}
+.card-summary{font-size:13px;color:#6b7280;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.card-time{font-size:11px;color:#9ca3af}
+.card-link{font-size:12px;color:#6366f1;text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:3px;transition:color 0.2s}
+.card-link:hover{color:#4f46e5}
+.card-link::after{content:' ↗';font-size:10px}
+.section-divider{margin:20px 16px;padding:8px 16px;background:linear-gradient(135deg,#fef2f2,#fff7ed);border-radius:8px;border:1px dashed #fecaca;font-size:12px;color:#b45309;text-align:center;grid-column:1/-1}
+.footer{max-width:1200px;margin:0 auto;padding:24px 16px 32px;text-align:center;border-top:1px solid #e5e7eb}
+.footer p{font-size:12px;color:#9ca3af;margin-bottom:4px}
+.footer p strong{color:#6366f1}
+.footer .footer-sources{font-size:11px;color:#d1d5db;margin-top:8px}
+.footer a{color:#9ca3af}
+@media(max-width:768px){.hero{padding:32px 16px 28px}.hero-total{font-size:36px}.hero-stats{gap:4px}.hero-stat{padding:8px 12px;min-width:64px}.hero-stat-num{font-size:18px}.card-grid{grid-template-columns:1fr}.section-header h2{font-size:17px}.nav-link{padding:6px 12px;font-size:12px}}
+@media(max-width:480px){.hero h1{font-size:20px}.hero-date{font-size:13px}.hero-stat{padding:6px 10px;min-width:56px}.hero-stat-num{font-size:16px}.hero-stat-label{font-size:10px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-content">
+<div class="hero-badge">AI & 母婴行业 · 晨报</div>
+<h1>AI 与母婴行业日报</h1>
+<div class="hero-date">2026年7月23日 · 北京时间</div>
+<div class="hero-total">15</div>
+<div class="hero-total-label">条精选资讯（AI 0 条 + 母婴 15 条）</div>
+<div class="hero-stats"><div class="hero-stat"><div class="hero-stat-num" style="color:#a78bfa">0</div><div class="hero-stat-label">模型发布</div></div>
+<div class="hero-stat"><div class="hero-stat-num" style="color:#60a5fa">0</div><div class="hero-stat-label">产品发布</div></div>
+<div class="hero-stat"><div class="hero-stat-num" style="color:#fbbf24">15</div><div class="hero-stat-label">行业动态</div></div>
+<div class="hero-stat"><div class="hero-stat-num" style="color:#34d399">0</div><div class="hero-stat-label">论文研究</div></div>
+<div class="hero-stat"><div class="hero-stat-num" style="color:#f472b6">0</div><div class="hero-stat-label">技巧与观点</div></div></div>
+</div></header>
+
+<nav class="nav-bar" id="navBar"><div class="nav-inner">
+<a href="#sec-models" class="nav-link" data-section="models">🤖 模型发布 <span class="nav-count">0</span></a>
+<a href="#sec-products" class="nav-link" data-section="products">🚀 产品发布 <span class="nav-count">0</span></a>
+<a href="#sec-industry" class="nav-link" data-section="industry">📡 行业动态 <span class="nav-count">15</span></a>
+<a href="#sec-paper" class="nav-link" data-section="paper">📄 论文研究 <span class="nav-count">0</span></a>
+<a href="#sec-tip" class="nav-link" data-section="tip">💡 技巧与观点 <span class="nav-count">0</span></a>
+</div></nav>
+
+<main class="main">
+
+  <section id="sec-models">
+    <div class="section-header">
+      <div class="section-icon icon-models">🤖</div>
+      <h2>模型发布 / 更新</h2>
+      <span class="section-count">0 条</span>
+    </div>
+    <div class="card-grid">
+
+    </div>
+  </section>
+  <section id="sec-products">
+    <div class="section-header">
+      <div class="section-icon icon-products">🚀</div>
+      <h2>产品发布 / 更新</h2>
+      <span class="section-count">0 条</span>
+    </div>
+    <div class="card-grid">
+
+    </div>
+  </section>
+  <section id="sec-industry">
+    <div class="section-header">
+      <div class="section-icon icon-industry">📡</div>
+      <h2>行业动态</h2>
+      <span class="section-count">15 条</span>
+    </div>
+    <div class="card-grid">
+
+      <div class="section-divider">▼ 母婴行业</div>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#1</span><h3 class="card-title">从底线到高线：严监管驱动母婴行业转型 中外企业共迎行业新格局 - 第一财经</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">第一财经</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiVEFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">今天 23:13</span>
+        <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LQW5PejZfYUJPUDFlMHJ5QVZnQXRNZlZjVHVVYjBOdzBGcWpIQ3BpQTUwTUg1VExfUS1sTThnT05hSXZkNDRNUmhydDc2MjhaTV82SA?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#2</span><h3 class="card-title">安热沙重磅登陆2026 CBME国际孕婴童展 以专业科研开辟婴童防晒增长新势力 - 中华网生活</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">中华网生活</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiY0FVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">今天 19:20</span>
+        <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pbGJ2djFPWUFwbUM2SHlfbExWdWNzZllxU083MmF1N0pPSmVzYkR0OFRkVVAxU3lJemV4Z2JLYlM2X3Z3cDNXcldxV1Q0V1RCcURUV2tQZHpaVU9weEV5WC1nMA?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#3</span><h3 class="card-title">母婴行业观察创始人杨德勇：请回答2026 - 母婴行业观察</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">母婴行业观察</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiUkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">今天 23:38</span>
+        <a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE9HR3BBamdCX3dheG1xLVRFOFlnalhYQkRpUjRQcDFTZ3d5VXZJRnNOeW9FWUttVEFGeWE1c29FVUM1MXpLQm5QRlJZZ2gtWnhIUXc?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#4</span><h3 class="card-title">安全食报斩获 2026 CBME 国际孕婴童展年度合作伙伴奖 - 美通社</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">美通社</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMibEFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">昨天 18:15</span>
+        <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9fS0ZEQUIxdndKa0t1Z0F3SUVCbTg3OG5IZXdRcWZPU0NBeHRLTC0zdVJZd3Q1d1ZZakNNSDZPeTNrdzA5TC1MSXBPZ2NnRHIwXzFZb2t1TklnV3VPUVhyTFVibGdFYkZhcFlXMQ?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#5</span><h3 class="card-title">临床实证成母婴行业“硬标尺” 段涛陶勇等专家CBME共同探讨科学养育新路径 - Sohu</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">Sohu</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiiAFBVV…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMnhaeUY2UmctTkFsUHdHWDBQMzZaX3NTb2paN2hCOTVDUHNOOUQ3TmNUT0lKNW8xbDVER3RCVWJiUTRCaUtpd3BrZFAxUEQxNXlYbFBfWWtyTVRQQzd1eHFRYm85anpqMi1nSkdxOE14OV9UakFWcXItREY3a3NhQjB6TWUtMnNP?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#6</span><h3 class="card-title">以IP驱动品牌融合发展，海豚传媒携“豚小蒙”完整生态亮相2026CBME孕婴童展_快讯 - 中国出版传媒商报</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">中国出版传媒商报</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiXEFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pRWk5aDNsZXJtekxsMUUxdU1kNmFSOUFWcTRGNHdqTmV2X2FPOUMyZE90VGM0Nll6WjRXWGxFbTZ1eERHamJQMzEyWmpGMXVheXJyMHVXNnFFS0Vs?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#7</span><h3 class="card-title">六神旗下婴童品牌小六神重磅亮相2026上海国际孕婴童展CBME - 时代在线</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">时代在线</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiVEFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE4tUkVPZlMwYnFleEhhdlB6OFBQQm55dkpyWEtWaU91VDk3ZXQ3RG5BLXp0SlJIaFRzVUVMSFlyVHAtaGFwQXdlZHAyMGp4dlN4SWZVbQ?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#8</span><h3 class="card-title">招商|拓渠道、抢客流、全域曝光！8月太原这场孕婴童展不能错过 - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiYkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">今天 19:17</span>
+        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE15aEZxVC03XzZTQ0RwQTREQ3RQR2JYY3NTMFo1bldIclNzRlZycWZsamlVWnFkTG1zYWdLYnM3UDRXbi0ycjVPRzZZSkcyMl8xbFNsdXdHZ3Q1aVFSZFNhVGt3?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#9</span><h3 class="card-title">2026CBME孕婴童展圆满收官 Sugar Swan糖天鹅健康学习桌椅获行业与市场双认可 - 中华网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">中华网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiXkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">今天 06:46</span>
+        <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBXN1BlR2lIR2lNUFpTQmYtOXJkVjFpU05TMkJjV2hiZkswSHNBZ0N4SlRYeWU0emRhZmo3TU1pZ05vaTZvVGE1OW1KZnlUU2d3TG5kV1pLWW1rN2ZTb2c?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#10</span><h3 class="card-title">厚实洗脸巾领导者闪耀CBME｜芈奈儿2026上海孕婴童展圆满收官 - 中华网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">中华网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiXkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XRmdwQXcwOG83R29hbDMzYm5nbmI4R1p3bE5LbmtuZnVSRWt0T043X0dyLUN3UzhjZ1lDc0M5NmpQaS12V2FCRWJ2Qm1taWliN09taDFDbzY1am96amc?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#11</span><h3 class="card-title">硬核智造出圈！诺斯贝尔孕婴童ODM实力引爆2026CBME展会 - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiYkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">昨天 18:38</span>
+        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1RZXFVZFdwVlVUVkVWdG9lbjdNM08wWVhtQUtwWllWdWRKSEtVU01La3FsY2pvQTFlcnV4RUlvSVdPdmZvVW04b24zUktxTU9rR2ozUWQ5Nkxabmdsc2dCQjBB?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#12</span><h3 class="card-title">CBME国际孕婴童展开幕 “新势力·新生长”擘画产业新蓝图 - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiYkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kUkM1WXQ5Q19FUzM5dDVhcXp6aXhHNFZlb3FRbGhkdEcyRHJPNlRjRlo3SHFXdzltMGJ5b0V3MkJSb2JrZWdUNlI3VVM4WmMweTFMLVU3b0w4dXg0NkpFN19R?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#13</span><h3 class="card-title">2026年新的母婴行业AI私域运营软件服务商实力测评 - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiYkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">昨天 14:10</span>
+        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE5rZGpLWHA0ZVc5QW4xS1NNVW1LYVpzbWtNZmozdGtsaWc3NkF6d2NsQ3J3YzZxaDF0SXdNZGxvOUh3ZTdJblNEZXZLbkFIWWNCaGFQZ3d0VWd5RzhsRmJlQzVR?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#14</span><h3 class="card-title">共“育”新机，感恩同行！2026 CBME圆满收官，我们明年再见！ - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiYkFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">昨天 17:38</span>
+        <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE90ZjZJd1RnenEyeDNabVJIM25NQ3Z0OUJvX0MxNm9NbTJUN2ZnZ3hHR0gtSE1LNVZidWo3LVR6WF9VcHNpeFFNSWk4SjRoY3R0eFpHQTlvdUxRdjZKb1hZQmp3?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+
+    <article class="card industry">
+      <div class="card-header"><span class="card-num">#15</span><h3 class="card-title">袋鼠妈妈携首创“全成长期5阶科学护理体系”亮相2026CBME国际孕婴童展 - 手机网易网</h3></div>
+      <div class="card-meta"><span class="source-chip maternal">手机网易网</span></div>
+      <p class="card-summary">&amp;lt;a href=&quot;https://news.google.com/rss/articles/CBMiZEFVX3…</p>
+      <div class="card-footer">
+        <span class="card-time">2天前</span>
+        <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVMUpWRVdNbW45TmxBcjRYYXhFcEJOQS1jZ3lsZHRzZUs4Mlg3dGNqSDE4MHNoLXoxNXZSeFNfNE5iSjY2WDY5SEQ0Qk4zdnRQQmZXOC1JdHNKTk93OVJiVGhwb0o?oc=5" target="_blank" rel="noopener noreferrer" class="card-link">原文</a>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section id="sec-paper">
+    <div class="section-header">
+      <div class="section-icon icon-paper">📄</div>
+      <h2>论文研究</h2>
+      <span class="section-count">0 条</span>
+    </div>
+    <div class="card-grid">
+
+    </div>
+  </section>
+  <section id="sec-tip">
+    <div class="section-header">
+      <div class="section-icon icon-tip">💡</div>
+      <h2>技巧与观点</h2>
+      <span class="section-count">0 条</span>
+    </div>
+    <div class="card-grid">
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+<p>本报告共收录 <strong>15 条</strong>精选资讯（AI 行业 0 条 + 母婴行业 15 条）</p>
+<p>AI 数据来源：<a href="https://aihot.virxact.com" target="_blank">AI HOT 日报</a> | 母婴数据来源：<a href="https://news.google.com" target="_blank">Google News</a></p>
+<p class="footer-sources">生成时间：2026年7月23日 · 每日北京时间 08:00 自动更新 · <a href="https://github.com" target="_blank">GitHub Actions 驱动</a></p>
+</footer>
+
+<script>
+(function(){const l=document.querySelectorAll('.nav-link'),s=document.querySelectorAll('section[id]');function o(){let c='';s.forEach(e=>{if(e.getBoundingClientRect().top<=120)c=e.id});l.forEach(e=>{e.classList.toggle('active',e.getAttribute('data-section')===c)})}window.addEventListener('scroll',o,{passive:true});o();l.forEach(e=>{e.addEventListener('click',function(){l.forEach(n=>n.classList.remove('active'));this.classList.add('active')})})})();
+</script>
+</body>
+</html>
