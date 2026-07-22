@@ -29,5 +29,6 @@ jobs:
             echo "无变化，跳过提交"
           else
             git commit -m "📰 ROOT 母婴新闻更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
+            git pull --rebase origin main
             git push
           fi
