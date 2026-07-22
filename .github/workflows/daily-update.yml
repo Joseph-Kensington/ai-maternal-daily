@@ -2,7 +2,7 @@ name: ROOT 母婴产品行业新闻 — 每日更新
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 北京时间每天 08:00
+    - cron: '0 0 * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -16,10 +16,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 同步远程最新代码
+        run: git pull origin main
+
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
+
       - name: 抓取新闻 & 生成页面
         run: node scripts/build.js
+
       - name: 推送更新
         run: |
           git config user.name "ROOT-Bot"
@@ -29,6 +37,5 @@ jobs:
             echo "无变化，跳过提交"
           else
             git commit -m "📰 ROOT 母婴新闻更新 $(TZ='Asia/Shanghai' date '+%Y-%m-%d')"
-            git pull --rebase origin main
             git push
           fi
